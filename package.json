@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "tsx watch -r dotenv/config src/server.ts",
-  "type-check": "tsc --noEmit"
-}
-,
+    "dev": "tsx watch -r dotenv/config src/server.ts",
+    "type-check": "tsc --noEmit"
+  },
   "repository": {
     "type": "module",
     "url": "git+https://github.com/anwarabuukar/openweather-api.git"
@@ -15,9 +14,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/anwarabuukar/openweather-api/issues"
   },
-  "homepage": "https://github.com/anwarabuukar/openweather-api#readme"
+  "homepage": "https://github.com/anwarabuukar/openweather-api#readme",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "tsx": "^4.21.0"
+  }
 }
